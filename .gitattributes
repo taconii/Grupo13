@@ -11,4 +11,10 @@ while(tentativa<=6):
   escolha=int(input())
   tentativa = tentativa + 1
   sala = sala + escolha
+  if (sala==8 and escolha==2):
+     print("Você escolheu o Caminho preto, isso te levou para um portal")
+     number = random.randint(1, 5)
+     print("Você foi jogado para a sala", number)
+     sala = number
+  
   
