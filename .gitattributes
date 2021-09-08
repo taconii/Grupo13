@@ -1,2 +1,14 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+mport random
+sala=1
+tentativa=0
+
+while(tentativa<=6):
+  
+  print("Você está na sala: ",sala)
+  print("Escolha seu caminho:")
+  print("[1] - Caminho vermelho")
+  print("[2] - Caminho preto")
+  escolha=int(input())
+  tentativa = tentativa + 1
+  sala = sala + escolha
+  
