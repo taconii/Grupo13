@@ -16,5 +16,9 @@ while(tentativa<=6):
      number = random.randint(1, 5)
      print("Você foi jogado para a sala", number)
      sala = number
-  
+  elif (sala==10 and escolha==2):
+     print("Você escolheu o Caminho preto, isso te levou para um portal")
+     number = random.randint(1, 5)
+     print("Você foi jogado para a sala", number)
+     sala = number
   
