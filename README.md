@@ -43,7 +43,7 @@ Um editor de código fonte que consiga rodar um programa em Python.
  
 * Material de apoio para estudo e criação do programa: https://docs.python.org/pt-br/3/tutorial/controlflow.html
  
-## Authors
+## Autores
  
 * **Arthur Cassemiro**: RA:21395836
 * **Gabriel Taconi**: RA:21526160
