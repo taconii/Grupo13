@@ -29,4 +29,14 @@ while(tentativa<=6):
      print("Voce venceu")
      tentativa=8
      break
+   
+  while (sala==6):
+     print("Você está na sala: ",sala)
+     print("Na sala 6 seu unico Caminho é o preto")
+     sala=8
+  
+while (tentativa==7 and sala<9):
+ print("Você está na sala: ",sala)
+ print("Você excedeu o limite de tentativas")
+ sala=10
   
