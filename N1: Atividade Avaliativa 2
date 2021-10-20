@@ -71,4 +71,9 @@ def ordenarCadastros(listaCadastro):
      else:
          escolha=int(input("Por favor digite somente 1 ou 2:"))
          print("---------------------------------------------------------------------------------------------")
-
+         
+def exibirCadastros(listaCadastro:List[Dict[str,str]]):
+    for cadastro in listaCadastro:
+        nome, email = cadastro.values()
+        print("Nome:",nome,"Email:",email)
+    print("---------------------------------------------------------------------------------------------")
