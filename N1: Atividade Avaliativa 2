@@ -13,3 +13,17 @@ def alterarNomeUsuario(listaCadastro:List[Dict[str,str]],nomeAlterado,novoNome):
     else:
         print("O email",nomeAlterado,"não esta na lista de cadastros")
         print("---------------------------------------------------------------------------------------------")
+
+def removerUsuario(listaCadastro:List[Dict[str,str]],usuarioRemovido):
+    for usuario in listaCadastro:
+     nome, email = usuario.values()
+   
+     if usuarioRemovido in email:
+         print("O usuário",nome,"com o email",usuarioRemovido,"foi removido da lista de cadastros")
+         print("---------------------------------------------------------------------------------------------")
+         listaCadastro.remove(usuario)
+         break
+
+    else:
+        print("O email",usuarioRemovido,"não esta na lista de cadastros")
+        print("---------------------------------------------------------------------------------------------")
