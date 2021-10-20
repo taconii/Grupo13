@@ -83,4 +83,57 @@ def novoCadastro():
     novoCadastro["nome"] = input("Digite seu nome:")
     novoCadastro["email"] = input("Agora seu email:")
     return novoCadastro
+    
+def main():
 
+    print("---------------------------------------------------------------------------------------------")
+    print("Olá meu nome e Sistema e venho te ajudar a organizar sua lista de inscritos do evento técnico")
+    print("---------------------------------------------------------------------------------------------")
+    listaCadastro = []
+    qtdCadastros = int(input("Você pode me informar quantos cadastros você deseja adicionar a sua lista:"))
+    print("---------------------------------------------------------------------------------------------")
+
+    while(qtdCadastros != len(listaCadastro)):
+        umcadastro = novoCadastro()
+        listaCadastro.append(umcadastro)
+        print("---------------------------------------------------------------------------------------------")
+
+    op=1
+    while op > 0 or op != 0:
+
+     print('<<<<< Painel de Controle >>>>>\n'
+           '[1] Exibir usuários \n'
+           '[2] Ordenar os participantes por ordem alfabética\n'
+           '[3] Vertificar se o usuário na lista de participantes\n'
+           '[4] Remover usuário\n'
+           '[5] Alterar nome de um usuário\n'
+           '[0] Sair do programa')
+     print("---------------------------------------------------------------------------------------------")
+     op = int(input('O que você deseja fazer:'))
+     print("---------------------------------------------------------------------------------------------")
+
+     if op == 1:
+        exibirCadastros(listaCadastro)
+     elif op == 2:
+        ordenarCadastros(listaCadastro)
+     elif op == 3:
+        usuarioBuscado = input("Digite o Nome do usuário que voce procura:")
+        verificarUsuario(listaCadastro,usuarioBuscado)
+     elif op == 4:
+        usuarioRemovido = input("Digite o Email do usuário que voce deseja remover:")
+        removerUsuario(listaCadastro,usuarioRemovido)
+     elif op == 5:
+        nomeAlterado = input("Digite o Email do usuário que voce deseja alterar o nome:")
+        novoNome = input("Digite o novo Nome que deseja colocar neste email:")
+        print("---------------------------------------------------------------------------------------------")
+        alterarNomeUsuario(listaCadastro,nomeAlterado,novoNome)
+     elif op == 0:
+        print("Programa encerrado")
+        print("---------------------------------------------------------------------------------------------")
+        break
+     elif op<0 or op>5:
+        print('Opção inválida. Tente novamente!')
+        print("---------------------------------------------------------------------------------------------")
+
+if __name__ == "__main__":
+    main()
