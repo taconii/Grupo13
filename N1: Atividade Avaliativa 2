@@ -27,3 +27,18 @@ def removerUsuario(listaCadastro:List[Dict[str,str]],usuarioRemovido):
     else:
         print("O email",usuarioRemovido,"não esta na lista de cadastros")
         print("---------------------------------------------------------------------------------------------")
+
+def verificarUsuario(listaCadastro:List[Dict[str,str]],usuarioBuscado):
+    for usuario in listaCadastro:
+     nome, email = usuario.values()
+     existe=1
+
+     if usuarioBuscado in nome:
+         print("O usuário",usuarioBuscado,"esta na lista de cadastros utilizando o email",email)
+         print("---------------------------------------------------------------------------------------------")
+         existe=0
+         break
+
+    if existe == 1:
+         print("Ops o usuário",usuarioBuscado,"não esta na lista de cadastros")
+         print("---------------------------------------------------------------------------------------------")
