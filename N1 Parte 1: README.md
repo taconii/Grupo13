@@ -1,4 +1,4 @@
-![titulo](https://raw.githubusercontent.com/taconii/Grupo13/main/titulo.png)
+# N1: Atividade Avaliativa 1
 ## Jogo de RPG em Python 
 O projeto é inspirado em jogos de RPG que são baseados em explorar dungeons, no qual o player 1 é o líder de uma guilda de heróis onde seu objetivo é guiar seus companheiros através do labirinto onde eles estão presos.
 O jogo é bem simples, o player começa na sala 1, precisa chegar até a sala 9 e tem o poder de escolha de apenas dois caminhos:
