@@ -77,3 +77,10 @@ def exibirCadastros(listaCadastro:List[Dict[str,str]]):
         nome, email = cadastro.values()
         print("Nome:",nome,"Email:",email)
     print("---------------------------------------------------------------------------------------------")
+
+def novoCadastro():
+    novoCadastro = {}
+    novoCadastro["nome"] = input("Digite seu nome:")
+    novoCadastro["email"] = input("Agora seu email:")
+    return novoCadastro
+
