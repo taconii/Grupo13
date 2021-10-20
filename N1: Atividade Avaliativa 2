@@ -8,7 +8,6 @@ def alterarNomeUsuario(listaCadastro:List[Dict[str,str]],nomeAlterado,novoNome):
         print("O nome do usuário",nome,"foi alternado para",novoNome)
         print("---------------------------------------------------------------------------------------------")
         usuario.update({"nome": novoNome})
-        print(usuario)
         break
     else:
         print("O email",nomeAlterado,"não esta na lista de cadastros")
